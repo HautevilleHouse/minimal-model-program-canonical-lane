@@ -1,0 +1,19 @@
+{
+  "extracted_source": "artifacts/constants_extracted.json",
+  "framework": "minimal_model_program",
+  "generated_utc": "2026-03-13T03:58:50Z",
+  "promoted_constants": {
+    "eps_coh": 0.0,
+    "kappa_birational": 1.0951820000000003,
+    "kappa_compact": 0.8045052292839904,
+    "rho_rigidity": 1.079,
+    "semiample_transfer": 1.0305400000000002,
+    "sigma_mori": 1.075
+  },
+  "promoted_stitch": {
+    "sigma_star_can": 1.055
+  },
+  "registry_path": "artifacts/constants_registry.json",
+  "schema_version": "2026-03-05",
+  "stitch_path": "artifacts/stitch_constants.json"
+}
