@@ -1,15 +1,42 @@
-# EG2 Public Note
+# EG2 Public Note (Capture and Restart)
 
-The `EG2` package establishes admissible capture across deformation and restart.
+Mature wording: `transport / local-to-global transfer`.
 
-Raw theorem constant:
+In-paper anchor: `paper/MINIMAL_MODEL_PROGRAM_PREPRINT.md` (`MMP_G2`).
 
-`sigma_mori^(raw) := mori_floor_raw - contraction_loss_raw - restart_loss_raw`.
+## Goal
+Expand the compressed capture/restart language into the local-to-global transport gate for `proving existence and persistence of the declared minimal-model and Mori-fiber endpoint packages across admissible birational reductions through a multi-lane birational super-architecture`.
 
-Closure criterion:
+## Objects
 
-- the admissible defect ledger remains above the declared capture floor,
-- restart losses are explicitly budgeted,
-- the canonical transport remains inside the admissible tube.
+- transport carrier: the admissible evolution, deformation, or routed lattice declared in the preprint.
+- capture floor: `sigma_mori`.
+- restart law: the normalization/re-entry rule that keeps corrective steps inside the admissible class.
+- carried losses: defect, restart, and normalization losses that must remain explicit.
 
-Main interpretation: the tracked Mori-transition defect does not consume the full closure budget.
+## Closure Criterion
+
+`MMP_G2` closes when `sigma_mori` survives admissible losses and restart corrections: Mori-transition defect stays above capture floor across admissible flip and contraction losses.
+This is the transport contribution to `M_MMP`.
+
+## Lemma Chain and Proof Payload
+
+### Lemma EG2.1 (transport accounting)
+Every transport step used by the lane is charged to the declared defect ledger instead of being absorbed into prose.
+
+Payload: verify that the capture constant `sigma_mori` is present in the constants registry and extraction inputs.
+
+### Lemma EG2.2 (restart preservation)
+Restart or normalization preserves the declared admissible class and does not create an untracked remainder.
+
+Payload: inspect the repro script and guard output for the gate tied to `sigma_mori`.
+
+### Theorem EG2.3 (capture gate closure)
+If transport accounting and restart preservation hold, then `MMP_G2` carries local control forward without breaking admissibility.
+
+## Current Instantiation
+
+- gate: `MMP_G2`
+- artifact key: `sigma_mori`
+- mature equivalent: `transport / local-to-global transfer`
+- audit surface: `repro/run_repro.sh` and `repro/certificate_runtime.json`
